@@ -89,3 +89,24 @@ pen.write();
 ```
 
 ![](.gitbook/assets/pen4.JPG)
+
+Also we can pass values in method by **arguments**. Used **\`\`** to make the string **dynamic** so the value can be inserted into **${ }**.
+
+```
+class Pen {
+  constructor() {
+    this.color = "red";
+    this.brand = "Parker Pens";
+  }
+  // takes x value as argument and pass it to the string
+  write(x) {
+    console.log(`${x} is writing`);
+  }
+}
+const pen = new Pen();
+pen.write("Robinson");
+```
+
+The string "Robinson" is passed as argument inside write() method and it consoled out the string with our string value.
+
+![](.gitbook/assets/pen5.JPG)
